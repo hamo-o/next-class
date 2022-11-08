@@ -14,11 +14,11 @@ export default function NavBar() {
         </div>
       </Link>
       <style jsx>{`
-        nav {
-          background: tomato;
+        div {
+          text-decoration: none;
         }
         .active {
-          color: green;
+          color: tomato;
         }
       `}</style>
     </nav>
