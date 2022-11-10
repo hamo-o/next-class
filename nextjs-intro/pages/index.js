@@ -12,26 +12,100 @@ export default function home() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <MyHead title="Home" />
-      <div className="movies-wrapper">
-        {movies?.map((movie) => (
-          <div key={movie.id}>
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              alt=""
-            />
-          </div>
-        ))}
+      <div className="movies-section">
+        <div className="movies-name">Nollywood Movies & TV</div>
+        <div className="movies-wrapper">
+          {movies?.map((movie) => (
+            <div key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="movies-section">
+        <div className="movies-name">Nollywood Movies & TV</div>
+        <div className="movies-wrapper">
+          {movies?.map((movie) => (
+            <div key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="movies-section">
+        <div className="movies-name">Nollywood Movies & TV</div>
+        <div className="movies-wrapper">
+          {movies?.map((movie) => (
+            <div key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="movies-section">
+        <div className="movies-name">Nollywood Movies & TV</div>
+        <div className="movies-wrapper">
+          {movies?.map((movie) => (
+            <div key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="movies-section">
+        <div className="movies-name">Nollywood Movies & TV</div>
+        <div className="movies-wrapper">
+          {movies?.map((movie) => (
+            <div key={movie.id}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <style jsx>{`
+ 
+      .movies-section {
+        width: 100%;
+        padding: 0.5rem 0 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+        .movies-name {
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20.9212px;
+          color: white;
+        }
+
         .movies-wrapper {
           width: 100%;
           display: flex;
+          flex-direction
           gap: 7px;
 
           overflow: auto;
         }
+
         img {
           width: 103px;
           height: 161px;

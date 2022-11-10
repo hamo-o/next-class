@@ -72,7 +72,7 @@ export default function NavBar() {
           width: 100vw;
           height: 48px;
 
-          position: sticky;
+          position: fixed;
           bottom: 0;
         }
         .container {
