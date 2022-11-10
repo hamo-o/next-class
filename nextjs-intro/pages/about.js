@@ -1,3 +1,10 @@
+import MyHead from '../components/MyHead';
+
 export default function about() {
-  return <div>About</div>;
+  return (
+    <div>
+      <MyHead title="About" />
+      About
+    </div>
+  );
 }

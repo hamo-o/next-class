@@ -1,3 +1,10 @@
+import MyHead from '../components/MyHead';
+
 export default function home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <MyHead title="Home" />
+      Home
+    </div>
+  );
 }
