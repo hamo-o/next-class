@@ -80,15 +80,14 @@ export default function home() {
         </div>
       </div>
       <style jsx>{`
- 
-      .movies-section {
-        width: 100%;
-        padding: 0.5rem 0 0.5rem;
+        .movies-section {
+          width: 100%;
+          padding: 0.5rem 0 0.5rem;
 
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
         .movies-name {
           font-family: 'SF Pro Display';
           font-style: normal;
@@ -100,7 +99,6 @@ export default function home() {
         .movies-wrapper {
           width: 100%;
           display: flex;
-          flex-direction
           gap: 7px;
 
           overflow: auto;
