@@ -44,11 +44,7 @@ export default function home() {
       <MyHead title="Home" />
       {movies.map((movie) => (
         <Link
-          href={{
-            pathname: `/movies/${movie.id}`,
-            query: { title: movie.original_title },
-          }}
-          as={`/movies/${movie.id}`}
+          href={`/movies/${movie.original_title}/${movie.id}`}
           key={movie.id}
         >
           <img
